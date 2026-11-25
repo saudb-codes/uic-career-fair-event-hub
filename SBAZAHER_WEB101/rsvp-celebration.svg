@@ -1,0 +1,36 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 160 160"
+     role="img"
+     aria-label="RSVP confirmation check mark">
+
+    <circle
+        cx="80" cy="80" r="69"
+        fill="#001e62"
+    />
+
+    <circle
+        cx="80" cy="80" r="54"
+        fill="#d50032"
+    />
+
+    <path
+        d="M48 81l21 20 45-44"
+        fill="none"
+        stroke="white"
+        stroke-width="12"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    />
+
+    <circle cx="18" cy="31" r="7" fill="#ffb81c"/>
+    <circle cx="143" cy="41" r="6" fill="#ffb81c"/>
+
+    <path
+        d="M14 118l12 8m108-14l10-10M86 4v11"
+        stroke="#ffb81c"
+        stroke-width="6"
+        stroke-linecap="round"
+    />
+
+</svg>
