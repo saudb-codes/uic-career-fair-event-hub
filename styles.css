@@ -1,0 +1,555 @@
+
+/* ================================= */
+/* PART 3: BODY STYLING              */
+/* ================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9eef5;
+    background-image: url("UIC TECH FAIR.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #202530;
+}
+
+
+/* ================================= */
+/* PART 4: HEADER AND NAVIGATION     */
+/* ================================= */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #001e62;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+
+/* ================================= */
+/* HERO SECTION                      */
+/* ================================= */
+
+.hero {
+    background-color: rgba(255, 255, 255, 0.94);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #001e62;
+    font-size: 36px;
+}
+
+h2 {
+    color: #d50032;
+}
+
+.site-header h2 {
+    color: white;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ================================= */
+/* BUTTONS                           */
+/* ================================= */
+
+button {
+    background-color: #d50032;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a00026;
+}
+
+
+/* ================================= */
+/* CONTENT SECTIONS                  */
+/* ================================= */
+
+.content-section {
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.event-image {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #001e62;
+    color: white;
+    padding: 20px;
+}
+
+
+/* ================================= */
+/* PART 5: DARK MODE                 */
+/* ================================= */
+
+#theme-button,
+#motion-button {
+    background-color: white;
+    color: #001e62;
+    border: 2px solid #d50032;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#theme-button:hover,
+#motion-button:hover {
+    background-color: #dddddd;
+}
+
+body.dark-mode {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("UIC TECH FAIR.jpeg");
+
+    color: white;
+}
+
+.dark-mode .site-header {
+    background-color: #111827;
+}
+
+.dark-mode .hero {
+    background-color: rgba(25, 30, 40, 0.95);
+    color: white;
+}
+
+.dark-mode .content-section {
+    background-color: rgba(25, 30, 40, 0.95);
+    color: white;
+}
+
+.dark-mode h1 {
+    color: white;
+}
+
+.dark-mode h2 {
+    color: #ff607b;
+}
+
+.dark-mode .site-header h2 {
+    color: white;
+}
+
+.dark-mode nav a,
+.dark-mode nav a:visited {
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #111827;
+}
+
+.dark-mode #myform input {
+    background-color: #303846;
+    color: white;
+    border-color: #aaaaaa;
+}
+
+
+/* ================================= */
+/* PART 6: RSVP SECTION              */
+/* ================================= */
+
+.rsvp-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.rsvp-description {
+    flex: 1;
+    min-width: 0;
+}
+
+.rsvp-participants {
+    flex: 1;
+    min-width: 0;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rsvp-participants li {
+    margin-bottom: 10px;
+}
+
+.dark-mode .rsvp-participants {
+    background-color: #303846;
+    color: white;
+}
+
+#rsvp-count {
+    font-weight: bold;
+    color: #d50032;
+}
+
+.dark-mode #rsvp-count {
+    color: #ff738a;
+}
+
+
+/* ================================= */
+/* RSVP FORM                         */
+/* ================================= */
+
+#myform label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#myform input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+
+/* ================================= */
+/* PART 7: VALIDATION                */
+/* ================================= */
+
+#myform input.invalid-input {
+    border: 2px solid red !important;
+    background-color: #ffe6e6 !important;
+    color: black !important;
+}
+
+#form-message.error {
+    color: #b4002b;
+    font-weight: bold;
+}
+
+#form-message.success {
+    color: #13722c;
+    font-weight: bold;
+}
+
+.dark-mode #form-message.error {
+    color: #ff8298;
+}
+
+.dark-mode #form-message.success {
+    color: #8ce6a5;
+}
+
+
+/* ================================= */
+/* HERO BUTTONS                      */
+/* ================================= */
+
+.hero-button {
+    display: inline-block;
+    background-color: #d50032;
+    color: white;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero-button:visited {
+    color: white;
+}
+
+.hero-button:hover {
+    background-color: #a00026;
+}
+
+
+/* ================================= */
+/* PART 8: SCROLL ANIMATIONS         */
+/* ================================= */
+
+/* Initially hidden and shifted down */
+.reveal-section {
+    opacity: 0;
+    transform: translateY(55px);
+
+    transition:
+        opacity 700ms ease,
+        transform 700ms ease;
+}
+
+
+/* Fade in and move upward */
+.reveal-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ================================= */
+/* PART 9: SUCCESS MODAL             */
+/* ================================= */
+
+/* Darken the rest of the screen */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+
+/* Hide modal until valid RSVP */
+.modal-overlay[hidden] {
+    display: none;
+}
+
+
+/* Modal box */
+.modal-content {
+    position: relative;
+    width: min(100%, 440px);
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+    box-sizing: border-box;
+
+    background-color: white;
+    color: #202530;
+
+    border-radius: 16px;
+    padding: 34px 24px 30px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 65px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Modal heading */
+.modal-content h2 {
+    font-size: 28px;
+    margin: 14px 0 10px;
+}
+
+
+/* Personalized message */
+.modal-content p {
+    margin: 9px 0;
+    overflow-wrap: anywhere;
+}
+
+
+/* Extra message */
+.modal-note {
+    font-size: 15px;
+    color: #4d5664;
+}
+
+
+/* BONUS: Close button */
+#close-modal {
+    display: block;
+    margin: 0 0 8px auto;
+    padding: 9px 16px;
+}
+
+
+/* ================================= */
+/* PART 9: IMAGE ANIMATION           */
+/* ================================= */
+
+#modal-image {
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+
+    transform-origin: center;
+
+    animation: celebrate-image 850ms ease-in-out
+        infinite alternate;
+}
+
+
+/* Animate by scaling and rotating */
+@keyframes celebrate-image {
+
+    from {
+        transform: scale(0.82) rotate(-9deg);
+    }
+
+    to {
+        transform: scale(1.10) rotate(9deg);
+    }
+
+}
+
+
+/* Dark mode support for modal */
+.dark-mode .modal-content {
+    background-color: #242c3a;
+    color: white;
+}
+
+.dark-mode .modal-note {
+    color: #d1d5db;
+}
+
+
+/* ================================= */
+/* PART 8 & 9 BONUS: REDUCE MOTION   */
+/* ================================= */
+
+/* Disable scrolling animations */
+.motion-reduced .reveal-section {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+
+/* Disable modal image animation */
+.motion-reduced #modal-image {
+    animation: none !important;
+    transform: none !important;
+}
+
+
+/* Disable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+html:has(body.motion-reduced) {
+    scroll-behavior: auto;
+}
+
+
+/* ================================= */
+/* RESPONSIVE LAYOUT                 */
+/* ================================= */
+
+@media screen and (max-width: 600px) {
+
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .rsvp-container {
+        flex-direction: column;
+    }
+
+    .rsvp-description,
+    .rsvp-participants {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .modal-content {
+        padding: 24px 16px;
+    }
+
+}
+
+
+/* Respect device-level reduced motion settings */
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto !important;
+    }
+
+    .reveal-section {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    #modal-image {
+        animation: none !important;
+        transform: none !important;
+    }
+
+}
