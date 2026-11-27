@@ -45,27 +45,26 @@ Another challenge was implementing an animated confirmation modal that appears a
 
 ### 1. Website Homepage
 
-The main homepage displays career fair information and provides navigation to different sections of the website.
-
+The main [homepage](https://github.com/saudb-codes/uic-career-fair-event-hub/blob/main/Screenshot%202026-11-27%20111914.png) displays career fair information and provides navigation to different sections of the website.
 
 
 ### 2. Dark Mode
 
 The dark mode feature allows users to switch between light and dark themes based on their preferences.
 
-![Dark Mode](dark-mode.png)
+[Dark Mode](https://github.com/saudb-codes/uic-career-fair-event-hub/blob/main/Screenshot%202026-11-27%20113008.png)
 
 ### 3. RSVP Confirmation
 
 After successfully submitting the RSVP form, users receive an animated confirmation message.
 
-![RSVP Confirmation](rsvp-confirmation.png)
+[RSVP Confirmation](https://github.com/saudb-codes/uic-career-fair-event-hub/blob/main/Screenshot%202026-11-27%20111949.png)
 
 ## Video Demonstration
 
 The video demonstrates the website's navigation, dark mode, RSVP registration, form validation, and interactive confirmation modal.
 
-[Watch the Video Demonstration](INSERT_YOUTUBE_LINK_HERE)
+[Video Demonstration](url)
 
 ## Project Structure
 
